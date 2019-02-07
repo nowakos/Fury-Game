@@ -4,7 +4,7 @@
 Fury game  is a simple game created using ECMAScript 6
 
 ## Overview
-This is my first game created during workshop in CodersLap bootcamp. Game using class provided by ECMAScript6 and show simple example object oriented programing.
+This is my first game created during workshop in CodersLap bootcamp. Game using class provided by ECMAScript6 and show simple example Object Oriented Programing(OOP).
 
 ## Built With
 * ECMAScript 6
@@ -38,5 +38,5 @@ Clone this repository git -clone
 ```
 
 ## Running the App
-1. At the root of your project, run npm start
-2. Run index.html
+1. Run index.html
+
