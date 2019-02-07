@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+:root {
+	--main-color: #42f445;
+	--second-color: #3d9dc6;
+	--third-color: #c64c3d;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--main-color);
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+section#startGame {
+	margin: 0 auto;
+	padding-top: 15rem;
+}
+
+.btn{
+	width: 20rem;
+	height: 5rem;
+	position: absolute;
+	color: white;
+	font-size: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: var(--second-color);
+	border-radius: 0.5rem;
+	border: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	/*border: 2px solid white;*/
+	z-index: 1;
+	cursor: pointer;
+	transition: border 1s, font-size 1s ease;
+}
+
+.btn.start:hover {
+	border: 3px solid white;
+	font-size: 2.7rem;
+}
+
+
+section#score {
+	width: 100%;
+}
+
+section#score div {
+	width: 10em;
+	height: 4em;
+	text-align: center;
+	padding: 0.5em;
+	background-color: var(--second-color);
+	color: white;
+	border-radius: 0.5rem;
+	margin: 3em auto;
+	border: 3px solid white;
+
+}
+
+#board {
+	width: 40.6rem;
+	height: 40.6rem;
+	margin: 2em auto;
+
+}
+
+#board > div {
+	border: 2px solid var(--third-color);
+	float: left;
+	width: 4rem;
+	height: 4rem;
+	background-color: white;
+}
+
+
+
+
+.furry {
+	background-image: url('../images/furry.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+.coin {
+	position: relative;
+}
+
+.coin::after {
+	content: "$";
+	color: white;
+	font-size: 1.75rem;
+	font-weight: 900;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.coin::before {
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: #FCB82F;
+	display: block;
+	content: "";
+	box-shadow: 0 0 0 5px #FFE37F;
+}
+
+section#gameOver {
+	position: fixed;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	padding: 1.25rem;
+
+
+}
+
+section#gameOver div {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.btn.tryAgain {
+	width: 10rem;
+	height: 3rem;
+	position: absolute;
+	color: white;
+	font-size: 1rem
+}
+
+.btn.tryAgain:hover {
+	border: 3px solid white;
+	font-size: 1.5rem;
+}
+
+.invisible {
+	display: none;
+}
+
+
+

@@ -1,0 +1,20 @@
+{
+  "name": "furry_game",
+  "version": "0.1.0",
+  "description": "Simple game write in ECMAScript 6",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.2.0",
+    "babel-loader": "8.0.4",
+    "css-loader": "1.0.0",
+    "node-sass": "4.9.3",
+    "sass-loader": "7.1.0",
+    "webpack": "4.19.1",
+    "webpack-cli": "3.1.0",
+    "style-loader": "0.23.1"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  }
+}
